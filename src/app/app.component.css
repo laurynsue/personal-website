@@ -45,10 +45,6 @@ mat-list{
     color: #E9ECCE;
 }
 
-.navLinks .onCurrent{
-    color:chartreuse;
-}
-
 .copyright{
     position: absolute;
     bottom: 8px;

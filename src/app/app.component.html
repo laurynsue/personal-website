@@ -3,29 +3,41 @@
     <a routerLink="/"><h1>Lauryn.</h1></a>
     <mat-list class="navLinks">
       <mat-list-item>
-        <a routerLink="/home">HOME</a>
+        <a id="home" routerLink="/home" routerLinkActive="active"
+          ><i class="fas fa-home"></i> HOME</a
+        >
       </mat-list-item>
 
       <mat-list-item>
-        <a routerLink="/about">ABOUT</a>
+        <a id="about" routerLink="/about" routerLinkActive="active"
+          ><i class="fas fa-user"></i> ABOUT</a
+        >
       </mat-list-item>
 
       <mat-list-item>
-        <a routerLink="/experience">EXPERIENCE</a>
+        <a routerLink="/experience" routerLinkActive="active"
+          ><i class="fas fa-graduation-cap"></i> EXPERIENCE</a
+        >
       </mat-list-item>
 
       <mat-list-item>
-        <a routerLink="/work">WORK</a>
+        <a routerLink="/work" routerLinkActive="active"
+          ><i class="fas fa-layer-group"></i> WORK</a
+        >
       </mat-list-item>
 
       <mat-list-item>
-        <a routerLink="/contact">CONTACT</a>
+        <a routerLink="/contact" routerLinkActive="active"
+          ><i class="fas fa-comment-alt"></i> CONTACT</a
+        >
       </mat-list-item>
     </mat-list>
-    <p class="copyright">Copyright 2021 LAURYN SUE</p>
+    <p class="copyright"><i class="far fa-copyright"></i> 2021 LAURYN SUE</p>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <router-outlet></router-outlet>
+    <div [@routeAnimations]="prepareRoute(outlet)">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
