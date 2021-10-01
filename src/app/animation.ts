@@ -39,4 +39,220 @@ import {
         ]),
         query(':enter', animateChild()),
       ]),
+      transition('HomePage <=> ContactPage', [
+        style({ position: 'relative' }),
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%'
+          })
+        ]),
+        query(':enter', [
+          style({ left: '-100%' })
+        ]),
+        query(':leave', animateChild()),
+        group([
+          query(':leave', [
+            animate('300ms ease-out', style({ left: '100%' }))
+          ]),
+          query(':enter', [
+            animate('300ms ease-out', style({ left: '0%' }))
+          ])
+        ]),
+        query(':enter', animateChild()),
+      ]),
+      transition('HomePage <=> WorkPage', [
+        style({ position: 'relative' }),
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%'
+          })
+        ]),
+        query(':enter', [
+          style({ left: '-100%' })
+        ]),
+        query(':leave', animateChild()),
+        group([
+          query(':leave', [
+            animate('300ms ease-out', style({ left: '100%' }))
+          ]),
+          query(':enter', [
+            animate('300ms ease-out', style({ left: '0%' }))
+          ])
+        ]),
+        query(':enter', animateChild()),
+      ]),
+      transition('HomePage <=> ExperiencePage', [
+        style({ position: 'relative' }),
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%'
+          })
+        ]),
+        query(':enter', [
+          style({ left: '-100%' })
+        ]),
+        query(':leave', animateChild()),
+        group([
+          query(':leave', [
+            animate('300ms ease-out', style({ left: '100%' }))
+          ]),
+          query(':enter', [
+            animate('300ms ease-out', style({ left: '0%' }))
+          ])
+        ]),
+        query(':enter', animateChild()),
+      ]),
+      transition('AboutPage <=> ContactPage', [
+        style({ position: 'relative' }),
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%'
+          })
+        ]),
+        query(':enter', [
+          style({ left: '-100%' })
+        ]),
+        query(':leave', animateChild()),
+        group([
+          query(':leave', [
+            animate('300ms ease-out', style({ left: '100%' }))
+          ]),
+          query(':enter', [
+            animate('300ms ease-out', style({ left: '0%' }))
+          ])
+        ]),
+        query(':enter', animateChild()),
+      ]),
+      transition('AboutPage <=> WorkPage', [
+        style({ position: 'relative' }),
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%'
+          })
+        ]),
+        query(':enter', [
+          style({ left: '-100%' })
+        ]),
+        query(':leave', animateChild()),
+        group([
+          query(':leave', [
+            animate('300ms ease-out', style({ left: '100%' }))
+          ]),
+          query(':enter', [
+            animate('300ms ease-out', style({ left: '0%' }))
+          ])
+        ]),
+        query(':enter', animateChild()),
+      ]),
+      transition('AboutPage <=> ExperiencePage', [
+        style({ position: 'relative' }),
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%'
+          })
+        ]),
+        query(':enter', [
+          style({ left: '-100%' })
+        ]),
+        query(':leave', animateChild()),
+        group([
+          query(':leave', [
+            animate('300ms ease-out', style({ left: '100%' }))
+          ]),
+          query(':enter', [
+            animate('300ms ease-out', style({ left: '0%' }))
+          ])
+        ]),
+        query(':enter', animateChild()),
+      ]),
+      transition('WorkPage <=> ExperiencePage', [
+        style({ position: 'relative' }),
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%'
+          })
+        ]),
+        query(':enter', [
+          style({ left: '-100%' })
+        ]),
+        query(':leave', animateChild()),
+        group([
+          query(':leave', [
+            animate('300ms ease-out', style({ left: '100%' }))
+          ]),
+          query(':enter', [
+            animate('300ms ease-out', style({ left: '0%' }))
+          ])
+        ]),
+        query(':enter', animateChild()),
+      ]),
+      transition('WorkPage <=> ContactPage', [
+        style({ position: 'relative' }),
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%'
+          })
+        ]),
+        query(':enter', [
+          style({ left: '-100%' })
+        ]),
+        query(':leave', animateChild()),
+        group([
+          query(':leave', [
+            animate('300ms ease-out', style({ left: '100%' }))
+          ]),
+          query(':enter', [
+            animate('300ms ease-out', style({ left: '0%' }))
+          ])
+        ]),
+        query(':enter', animateChild()),
+      ]),
+      transition('ExperiencePage <=> ContactPage', [
+        style({ position: 'relative' }),
+        query(':enter, :leave', [
+          style({
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%'
+          })
+        ]),
+        query(':enter', [
+          style({ left: '-100%' })
+        ]),
+        query(':leave', animateChild()),
+        group([
+          query(':leave', [
+            animate('300ms ease-out', style({ left: '100%' }))
+          ]),
+          query(':enter', [
+            animate('300ms ease-out', style({ left: '0%' }))
+          ])
+        ]),
+        query(':enter', animateChild()),
+      ]),
     ]);
