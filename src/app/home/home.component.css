@@ -1,52 +1,7 @@
-.wraper{
-    position: relative;
-    text-align: center;
-}
-
-img {
-    width: auto;
-    height: 350px;
-    display: block; 
-    margin: 50px auto 0px auto;
-}
-
-.mainTitle{
-    display:block;
-    text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 75px;
-    /* identical to box height */
-    letter-spacing: 0.09em;
-    color: #E9ECCE;
-}
-
-.subTitle {
-    display:block;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight:lighter;
-    font-size: 20px;
-    letter-spacing: 5px;
-    line-height: 28px;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-ul {
-    text-align: center;
-}
-
-ul.navbar-items li
-{
-    display: inline;
-    padding-top:20px;
-    padding-left: 16px;
-}
-
-ul.navbar-items i {
-    font-size: 30px; 
-    color: white
+.greeting div{
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
 }

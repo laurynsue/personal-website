@@ -45,6 +45,17 @@ mat-list{
     color: #E9ECCE;
 }
 
+ul.navbar-items li
+{
+    display: inline;
+    padding-left: 0.3em;
+}
+
+ul.navbar-items i {
+    font-size: 30px; 
+    color: white
+}
+
 .copyright{
     position: absolute;
     bottom: 8px;
