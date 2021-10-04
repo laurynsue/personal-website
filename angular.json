@@ -98,7 +98,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/assets/img"
+              "src/assets/img",
+              "personal-website/src/assets/img/me.jpeg"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/purple-green.css",

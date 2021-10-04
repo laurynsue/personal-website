@@ -20,6 +20,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { GreetingComponent } from './greeting/greeting.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { GreetingComponent } from './greeting/greeting.component';
     ExperienceComponent,
     WorkComponent,
     ContactComponent,
-    GreetingComponent
+    GreetingComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

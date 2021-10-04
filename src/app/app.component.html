@@ -1,28 +1,7 @@
 <div class="container">
-  <mat-toolbar>
-    <button mat-button id="home" routerLink="/home" routerLinkActive="active">
-      HOME
-    </button>
+  <app-header></app-header>
 
-    <button mat-button id="about" routerLink="/about" routerLinkActive="active">
-      ABOUT
-    </button>
-
-    <button mat-button routerLink="/experience" routerLinkActive="active">
-      EXPERIENCE
-    </button>
-
-    <button mat-button routerLink="/work" routerLinkActive="active">
-      PROJECT
-    </button>
-
-    <button mat-button routerLink="/contact" routerLinkActive="active">
-      CONTACT
-    </button>
-  </mat-toolbar>
   <div [@routeAnimations]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
 </div>
-
-<!--footer-->

@@ -4,13 +4,11 @@ h1 {
     color: #e9ecce;
 }
 
-ul.navbar-items li
-{
-    display: inline;
-    padding-left: 0.3em;
+.socialMedia{
+    display:flex;
+    text-align: center;
 }
 
-ul.navbar-items i {
-    font-size: 30px; 
-    color: white
+button{
+    color:#e9ecce;
 }
