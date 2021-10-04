@@ -1,4 +1,4 @@
-<h1>About</h1>
+<h1>ABOUT</h1>
 
 <div
   class="container"
@@ -15,12 +15,12 @@
     fxLayoutAligmnet="space-between center"
     fxLayoutGap="20px"
   >
-    <div fxFlex.lt-md="100" fxFlex="33" class="row1">
+    <div fxFlex.lt-md="100" fxFlex="40" class="row1">
       <img
         src="https://i.pinimg.com/originals/cd/7a/9a/cd7a9aa16ac398189ad044305ddbd299.jpg"
       />
     </div>
-    <div fxFlex.lt-md="100" fxFlex="67">
+    <div fxFlex.lt-md="100" fxFlex="60">
       <mat-card>
         I am Lauryn Sue, a fresh graduate student from Sarawak, Malaysia. A
         tech-savvy, an aspiring web developer, and a constant learner who is
@@ -41,11 +41,11 @@
   >
     <div fxFlex.lt-md="100" fxFlex="50">
       <h1>1</h1>
-      <h3>Numbers of Completed Projects</h3>
+      <h3>Numbers of Completed Project(s)</h3>
     </div>
     <div fxFlex.lt-md="100" fxFlex="50" class="downloadButton">
-      <button mat-stroked-button>Download CV</button>
-      <button mat-stroked-button>Download Resume</button>
+      <button mat-stroked-button (click)="openCV()">View CV</button>
+      <button mat-stroked-button (click)="openResume()">View Resume</button>
     </div>
   </div>
 </div>

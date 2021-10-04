@@ -12,4 +12,8 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openLinkedIn(){
+    window.open("https://www.linkedin.com/in/laurynsue");
+  }
+
 }

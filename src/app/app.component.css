@@ -1,4 +1,4 @@
-.example-container {
+.container {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -7,63 +7,8 @@
     background-color: #343353;
 }
 
-.example-container a {
-    text-decoration: none;
-}
-
-mat-sidenav {
-    width: 300px;
-    border-right: 1px solid #E9ECCE;
-    background-color: #343353;
-}
-
-h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 75px;
-    letter-spacing: 0.09em;
-    padding-left: 0.3em;
-    color: #E9ECCE;
-}
-
-mat-list{
-    padding: 70px 0;
-}
-
-.navLinks mat-list-item {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.09em;
-}
-
-.navLinks a {
-    color: #E9ECCE;
-}
-
-ul.navbar-items li
-{
-    display: inline;
-    padding-left: 0.3em;
-}
-
-ul.navbar-items i {
-    font-size: 30px; 
-    color: white
-}
-
-.copyright{
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
+mat-toolbar{
+	display:flex;
+	align-items: center;
+	background: transparent;
 }

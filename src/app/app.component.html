@@ -1,60 +1,28 @@
-<mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" opened>
-    <a routerLink="/"><h1>Lauryn.</h1></a>
-    <mat-list class="navLinks">
-      <mat-list-item>
-        <a id="home" routerLink="/home" routerLinkActive="active"
-          ><i class="fas fa-home"></i> HOME</a
-        >
-      </mat-list-item>
+<div class="container">
+  <mat-toolbar>
+    <button mat-button id="home" routerLink="/home" routerLinkActive="active">
+      HOME
+    </button>
 
-      <mat-list-item>
-        <a id="about" routerLink="/about" routerLinkActive="active"
-          ><i class="fas fa-user"></i> ABOUT</a
-        >
-      </mat-list-item>
+    <button mat-button id="about" routerLink="/about" routerLinkActive="active">
+      ABOUT
+    </button>
 
-      <mat-list-item>
-        <a routerLink="/experience" routerLinkActive="active"
-          ><i class="fas fa-graduation-cap"></i> EXPERIENCE</a
-        >
-      </mat-list-item>
+    <button mat-button routerLink="/experience" routerLinkActive="active">
+      EXPERIENCE
+    </button>
 
-      <mat-list-item>
-        <a routerLink="/work" routerLinkActive="active"
-          ><i class="fas fa-layer-group"></i> WORK</a
-        >
-      </mat-list-item>
+    <button mat-button routerLink="/work" routerLinkActive="active">
+      PROJECT
+    </button>
 
-      <mat-list-item>
-        <a routerLink="/contact" routerLinkActive="active"
-          ><i class="fas fa-comment-alt"></i> CONTACT</a
-        >
-      </mat-list-item>
-    </mat-list>
-    <ul class="navbar-items">
-      <li>
-        <i class="fab fa-linkedin"></i>
-      </li>
+    <button mat-button routerLink="/contact" routerLinkActive="active">
+      CONTACT
+    </button>
+  </mat-toolbar>
+  <div [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+</div>
 
-      <li>
-        <i class="fas fa-envelope"></i>
-      </li>
-
-      <li>
-        <i class="fab fa-instagram"></i>
-      </li>
-
-      <li>
-        <i class="fab fa-github"></i>
-      </li>
-    </ul>
-    <p class="copyright"><i class="far fa-copyright"></i> 2021 LAURYN SUE</p>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <div [@routeAnimations]="prepareRoute(outlet)">
-      <router-outlet #outlet="outlet"></router-outlet>
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<!--footer-->
