@@ -1,9 +1,12 @@
 <h1>CONTACT</h1>
 
 <div class="container">
-  <div class="socialMedia">
-    <button mat-button>LinkedIn</button>
-    <button mat-button>Email</button>
-    <button mat-button>GitHub</button>
-  </div>
+  <mat-card class="shadow-drop-center">
+    Feel free to contact me through these social medias!
+    <div class="socialMedia">
+      <a mat-button (click)="openLinkedIn()"> LinkedIn </a>
+      <a mat-button (click)="openEmail()">Email</a>
+      <a mat-button (click)="openGithub()">GitHub</a>
+    </div>
+  </mat-card>
 </div>

@@ -16,4 +16,12 @@ export class ContactComponent implements OnInit {
     window.open("https://www.linkedin.com/in/laurynsue");
   }
 
+  openGithub(){
+    window.open("https://www.github.com/laurynsue");
+  }
+
+  openEmail(){
+    window.open("mailto:laurynsue98@gmail.com");
+  }
+
 }
