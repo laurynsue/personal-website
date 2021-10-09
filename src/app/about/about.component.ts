@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   openResume(){
-    window.open("https://drive.google.com/file/d/1PYEwMwOBT4n5uPX7DDjyE0Qvov-p99wE/view?usp=sharing")
+    window.open("https://drive.google.com/file/d/1dk_nBPOLD7TFkaO_24sanPwRxE_BjegT/view?usp=sharing")
   }
 
   openCV(){
-    window.open("https://drive.google.com/file/d/1zVLKlV0j77Ca1Q721BUcO9VRw2vKXX9c/view?usp=sharing")
+    window.open("https://drive.google.com/file/d/1rYQq2SNfvmX-fz9uFOS8IdCl0dyFiu-Z/view?usp=sharing")
   }
 
   constructor() { }
